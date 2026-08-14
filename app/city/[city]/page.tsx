@@ -24,6 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: `Best Halal Restaurants in ${cityData.name} | Top Rated Halal Food`,
         description: `Explore the top 18 rated halal restaurants in ${cityData.name}, BC. Filtered by highest rating and most reviews. Discover your next favorite halal spot today.`,
+        alternates: {
+            canonical: `/best-halal-restaurants-in-${cityKey}`,
+        },
     };
 }
 
